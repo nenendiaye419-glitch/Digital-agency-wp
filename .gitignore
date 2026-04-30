@@ -1,0 +1,52 @@
+# WordPress Core Files
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/index.php
+/license.txt
+/readme.html
+/xmlrpc.php
+
+# WordPress Configuration
+wp-config.php
+.htaccess
+
+# WordPress Content - exclude by default, include custom ones below
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/upgrade-temp-backup/
+/wp-content/languages/
+
+# Third-party plugins (exclude all by default)
+/wp-content/plugins/*
+# But include custom plugins
+!/wp-content/plugins/latepoint/
+!/wp-content/plugins/surerank/
+
+# Third-party themes (exclude all by default)
+/wp-content/themes/*
+# But include custom/modified themes if any
+!/wp-content/themes/custom-*/
+
+# Development
+node_modules/
+.env
+.env.local
+debug.log
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+composer.lock
+package-lock.json
+yarn.lock
